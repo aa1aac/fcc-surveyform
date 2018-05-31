@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="eng"> 
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet"> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Survey page</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/design/design.css">
+        <link rel="stylesheet" href="assets/design/libs/bootstrap/css/bootstrap.css">
+    </head>
+    <body>
+         <h1 id="title">Survey Form</h1>
+         <div class="container" id="container">
+             <p id="description">
+                Let us know how we can improve freeCodeCamp 
+             </p>
+             <form action="" id="survey-form" class="container">
+                <label id="name-label" for="name">Name: </label><br><input type="text" id="name" placeholder="enter your name" required>
+                 <br>
+                 <label id="email-label" for="email">Email: </label><br><input type="email" id="email" placeholder="enter your email address" required> 
+                 <br>
+                 <label id="number-label" for="number">Age: </label><br><input type="number" id="number" placeholder="enter your age" min="12" max="125">
+
+                 <br>
+                 <div><label id="currentPosition-label" for="currentPosition">Which option best describes your current role?</label>
+                    <br>
+                 <select id="dropdown">
+                    <option disabled="disabled" value>Select an option</option>
+                    <option value="student">student</option>
+                    <option value="full-time-job">full-time-job</option>
+                    <option value="full-time-study">full-time-study</option>
+                    <option value="others">others</option>
+                  </select> 
+                </div>
+                <label>How likely is that you would recommend freeCodeCamp to a friend?<br>
+                    <ul>
+                        <li> <label>
+                                <input type="radio" name="rating" value="Definately">
+                                Definately
+                                
+                        </label>
+                        </li>
+                        <li><label>
+                                <input type="radio" name="rating" value="Maybe">
+                                Maybe
+                                
+                        </label></li>
+                        <li>
+                                <input type="radio" name="rating" value="Notsure">
+                                Not sure
+                                
+                        </li>
+                    </ul>
+                </label>
+
+                <br>
+                <label>that should be improved in the future
+                (Check all that apply):<br>
+                <ul>
+                    <li> <label><input type="checkbox" value="Front-end Projects ">Front-end Projects     </label></li>
+                    <li> <label><input type="checkbox" value="Back-end Projects "> Back-end Projects     </label></li>
+                 <li> <label> <input type="checkbox" value="Data Visualization ">Data Visualization     </label></li>
+                 <li> <label> <input type="checkbox" value="Challenges "> Challenges            </label></li>
+                 <li> <label><input type="checkbox" value="Open Source Community">Open Source Community  </label></li>
+                  
+                </ul>
+                </label> 
+                <br>
+                <label>
+                        Enter your suggestions<br>
+                        <textarea placeholder="enter your suggestions"></textarea>
+                </label>
+                <br>
+                <button id="submit">Submit</button>
+        
+             </form>
+         </div>
+        <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js" async defer></script>
+    </body>
+</html>
